@@ -18,7 +18,7 @@ const port = 800
 
 // if data is from PortableHotspot
 app.post("api/about/rename",(req,res)=>{
-  res.send("hiii suceecss")
+  res.json({message:"hiii suceecss"})
 })
 app.use('/hotspot', hotspotRouter)
 app.use('/bluetooth', BluetoothRouter)
