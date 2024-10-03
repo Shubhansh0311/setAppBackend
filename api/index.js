@@ -12,7 +12,7 @@ import connectionRouter from './Routes/connectionRouter.js'
 const app = express()
 app.use(express.json())
 // app.use(cors())
-app.use(cors({ origin: 'https://new-settingapp.vercel.app/' }));
+app.use(cors({ origin: 'https://new-settingapp.vercel.app' }));
 const port = 800
 
 // if data is from PortableHotspot
