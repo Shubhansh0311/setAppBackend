@@ -13,10 +13,11 @@ const app = express()
 app.use(express.json())
 // app.use(cors())
 app.use(cors({ origin: 'https://new-settingapp.vercel.app' }));
+app.options('*', cors()); 
 const port = 800
 
 // if data is from PortableHotspot
-app.post("https://backend-kp41axnfr-shubhansh0311s-projects.vercel.app/api/about/rename",(req,res)=>{
+app.post("api/about/rename",(req,res)=>{
   res.send("hiii suceecss")
 })
 app.use('/hotspot', hotspotRouter)
