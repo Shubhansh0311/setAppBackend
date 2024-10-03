@@ -16,6 +16,9 @@ app.use(cors({ origin: 'https://new-settingapp.vercel.app' }));
 const port = 800
 
 // if data is from PortableHotspot
+app.post("https://backend-kp41axnfr-shubhansh0311s-projects.vercel.app/api/about/rename",(req,res)=>{
+  res.send("hiii suceecss")
+})
 app.use('/hotspot', hotspotRouter)
 app.use('/bluetooth', BluetoothRouter)
 app.use('/wifi', wifiRouter)
