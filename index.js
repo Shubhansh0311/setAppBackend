@@ -28,6 +28,9 @@ app.use(express.json()); // Middleware to parse JSON bodies
 app.post("/api/about/rename", (req, res) => {
     res.json({ message: "hiii success" });
 });
+app.get("/test",(req,res)=>{
+    res.json({message:"api working properly"})
+})
 
 // Use routers
 app.use('/hotspot', hotspotRouter);
