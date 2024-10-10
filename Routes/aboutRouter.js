@@ -8,6 +8,7 @@ const aboutRouter = express.Router()
 let restoreStatus = false
 
 aboutRouter.get('/phoneName', async (req, res) => {
+  res.send(200).json({message:"about route working"})
   try {
     const data = await aboutModel.findOne({ id: 'phone' })
     res.status(201).json(data)
