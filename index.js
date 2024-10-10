@@ -44,3 +44,4 @@ app.use('/sound', soundRouter);
 app.use('/connection', connectionRouter);
 
 // Start the server
+export default app
