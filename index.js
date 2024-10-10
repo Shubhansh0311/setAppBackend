@@ -10,7 +10,7 @@ import soundRouter from './Routes/soundRouter.js';
 import connectionRouter from './Routes/connectionRouter.js';
 
 const app = express();
-const port = 800;
+// const port = 800;
 
 // CORS Options
 // const corsOptions = {
