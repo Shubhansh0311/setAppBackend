@@ -43,6 +43,6 @@ app.use('/sound', soundRouter);
 app.use('/connection', connectionRouter);
 
 // Start the server
-app.listen(port, () => {
-    console.log(`Server is listening at http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//     console.log(`Server is listening at http://localhost:${port}`);
+// });
