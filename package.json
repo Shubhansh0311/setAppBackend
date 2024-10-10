@@ -19,6 +19,7 @@
     "mongoose": "^7.6.3"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "eslint": "^8.0.0",
     "vercel": "^32.3.0"

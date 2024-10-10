@@ -1,6 +1,7 @@
 import express from 'express'
-import bluetoothModel from '../Models/bluetoothModel.js '
+
 import aboutModel from '../Models/AboutModel.js'
+import bluetoothModel from '../Models/bluetoothModel.js'
 // import mongoose from 'mongoose'
 // import connectDB from '../db.js'
 
