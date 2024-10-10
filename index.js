@@ -13,15 +13,15 @@ const app = express();
 const port = 800;
 
 // CORS Options
-const corsOptions = {
-    origin: 'https://new-settingapp.vercel.app', // Your React app URL
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Include OPTIONS
-    allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
-    credentials: true, // Include cookies in requests if needed
-};
+// const corsOptions = {
+//     origin: 'https://new-settingapp.vercel.app', // Your React app URL
+//     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Include OPTIONS
+//     allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
+//     credentials: true, // Include cookies in requests if needed
+// };
 
-app.options('*', cors(corsOptions)); // Handle preflight requests
-app.use(cors(corsOptions));
+// app.options('*', cors(corsOptions)); // Handle preflight requests
+// app.use(cors(corsOptions));
 app.use(express.json()); // Middleware to parse JSON bodies
 
 // POST route
@@ -29,6 +29,8 @@ app.post("/api/about/rename", (req, res) => {
     res.json({ message: "hiii success" });
 });
 app.get("/test",(req,res)=>{
+    console.log("success");
+    
     res.json({message:"api working properly"})
 })
 
