@@ -8,10 +8,11 @@ import simRouter from './Routes/simRouter.js';
 import soundRouter from './Routes/soundRouter.js';
 import aboutRouter from './Routes/aboutRouter.js';
 import connectionRouter from './Routes/connectionRouter.js';
+import connectDB from './db.js';
 
 
 const app = express();
-
+connectDB()
 
 // CORS Options
 const corsOptions = {
