@@ -20,8 +20,8 @@ const corsOptions = {
     credentials: true, // Include cookies in requests if needed
 };
 
-app.use(cors(corsOptions));
 app.options('*', cors(corsOptions)); // Handle preflight requests
+app.use(cors(corsOptions));
 app.use(express.json()); // Middleware to parse JSON bodies
 
 // POST route
