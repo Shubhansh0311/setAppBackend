@@ -21,6 +21,6 @@
   "devDependencies": {
     "@types/express": "^5.0.0",
     "eslint": "^8.0.0",
-    "vercel": "^37.6.1"
+    "vercel": "^32.3.0"
   }
 }
