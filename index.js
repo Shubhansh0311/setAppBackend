@@ -1,5 +1,5 @@
 import express from 'express';
-import cors from 'cors';
+// import cors from 'cors';
 import hotspotRouter from './Routes/hotspotRouter.js';
 import BluetoothRouter from './Routes/bluetoothRouter.js';
 import wifiRouter from './Routes/WifiRouter.js';
@@ -26,9 +26,14 @@ app.use(express.json()); // Middleware to parse JSON bodies
 
 // POST route
 app.post("/api/about/rename", (req, res) => {
+    console.log(req);
+    
     res.json({ message: "hiii success" });
-});
+})
 app.get("/test",(req,res)=>{
+
+    console.log(req);
+    
     console.log("success");
     
     res.json({message:"api working properly"})
