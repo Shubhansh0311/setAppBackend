@@ -7,6 +7,7 @@ const hotspotRouter = express.Router()
 // toggle buttons
 let toggle = false
 hotspotRouter.get('/status', async (req, res) => {
+  res.send("hiiiiiiiiiiiiiiiiiiiii")
   try {
     const hotspot = await hotspotModel.findOne({ btnName: 'hotspot' })
     const hotspotAuto = await hotspotModel.findOne({ btnName: 'hotspotAuto' })
