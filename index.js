@@ -38,7 +38,9 @@ app.get("/test",(req,res)=>{
     
     res.json({message:"api working properly"})
 })
-
+app.get("/",(req,res)=>{
+    res.json({msg:"success"})
+})
 // Use routers
 app.use('/hotspot', hotspotRouter);
 app.use('/bluetooth', BluetoothRouter);
